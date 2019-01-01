@@ -5,7 +5,7 @@ The Sieve of Eratosthenes is a simple, ancient algorithm for finding all prime n
 
 Made this using JavaScript.
 
-Check [this](https://medium.com/i-math/prime-numbers-the-sieve-of-eratosthenes-ee22c119b6de) out for the logic.
+Check [this](https://medium.com/i-math/prime-numbers-the-sieve-of-eratosthenes-ee22c119b6de) out if you want to se the magic behind the curtains.
 
 This implementation was inspired by this gif
 
