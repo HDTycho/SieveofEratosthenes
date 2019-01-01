@@ -2,89 +2,7 @@
 <html>
 <head>
     <title>Sieve Of Eratosthenes</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:500|Quicksand:300');
-
-        body{
-            font-family: Quicksand;
-        }
-        h1{
-            font-family:'Montserrat';
-        }
-
-        a{
-            color: black;
-        }
-
-        .container{
-            display: grid;
-            grid-template-rows: auto 15vh auto;
-            justify-items: center;
-            align-items: center;
-        }
-
-        .container header{
-            margin: 1%;
-            text-align: center;
-            font-size: 200%;
-        }
-
-        #inputbar{
-            display: grid;
-            grid-template-columns: 60% 40%;
-            width: 85vw;
-        }
-
-        #inputbar button{
-            font-size: 100%;
-            outline: none;
-            background-color :black;
-            color:white;
-            border: 2px solid black;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-
-        #myInput{
-            text-align: center;
-            outline: none;
-            border: 2px solid black;
-            border-bottom-left-radius: 10px;
-            border-top-left-radius: 10px;
-            font-size: 200%;
-        }
-
-        .EachPrimeNumberOutputID{
-            font-size: 40px;
-            border:black 2px solid;
-            width: 7vw;
-            border-radius: 5px;
-            margin: 5px;
-        }
-
-        #primeID{
-            color: white;background-color: black;border:black 2px solid;
-        }
-
-        #PrimeNumberOutput{
-            width: 85vw;
-            align-content: center;
-            padding-top: 5vh;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(8vw, auto));
-            align-items: center;
-            justify-items: center;
-        }
-
-        .demo{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            justify-items: center;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -93,11 +11,11 @@
             <h1>SIEVE OF ERATOSTHENES</h1>
             <h2>The Sieve of Eratosthenes is a simple, ancient algorithm for finding all prime numbers up to any given limit. Check
                 <a href="https://medium.com/i-math/prime-numbers-the-sieve-of-eratosthenes-ee22c119b6de" target="_blank">this</a>
-            out if you find it interesting.
+            out  if you want to see the magic behind the curtains.
             </h2>
             <h2><a href="https://github.com/Odyseeus/SieveofEratosthenes" target="_blank" style="font-family:'Montserrat';">Github Repo</a></h2>
             <div class="demo">
-                <h3>Prime</h3>
+                <h3 align="center">Prime</h3>
                 <h3>Composite</h3>
             </div>
             <div class="demo">
@@ -105,12 +23,9 @@
                 <span class="EachPrimeNumberOutputID">X</span>
             </div>
         </header>
-        <div id="inputbar">
-            <input type="number" id="myInput" placeholder="Enter a Natural number">
-            <button onclick="FindPrime()">
-                <h2>Click me / Press Enter</h2>
-            </button>
-        </div>
+
+            <input type="number" id="myInput" placeholder="Enter a Natural number" oninput="FindPrime()">
+
         <div align="center" id="PrimeNumberOutput"></div>
     </div>
     <script src="js/index.js"></script>

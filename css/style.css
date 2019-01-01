@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Quicksand:300');
+
+body{
+    font-family: Quicksand;
+}
+h1{
+    font-family:'Montserrat';
+}
+
+a{
+    color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: auto 15vh auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.container header{
+    margin: 1%;
+    text-align: center;
+    font-size: 200%;
+}
+
+#myInput{
+    text-align: center;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 2em;
+    width: 85vw;
+    height: 7vh;
+}
+
+.EachPrimeNumberOutputID{
+    font-size: 40px;
+    border:black 2px solid;
+    width: 7vw;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#primeID{
+    color: white;background-color: black;border:black 2px solid;
+}
+
+#PrimeNumberOutput{
+    width: 85vw;
+    align-content: center;
+    padding-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8vw, auto));
+    align-items: center;
+    justify-items: center;
+}
+
+.demo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
